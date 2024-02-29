@@ -20,5 +20,5 @@ from expedientes.views import bienvenida
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', bienvenida)
+    path('bienvenida/', bienvenida)
 ]
