@@ -1,0 +1,88 @@
+{% extends "base.html" %} {% block title %} {% endblock title %} {% block body%}
+
+
+<div class="row">
+    <div class="col-sm-3 col-md-3 col-xl-3 py-4 mx-2">
+      <div class="">
+        <div class="card-body">
+          
+
+                  <div class="card-body">
+                    <h6 class="card-title">Formulario de Ingreso de Datos</h6>
+                    <div class="container" style="padding: 10px">
+                      <form class="form-group">
+                        <div class="form-group">
+                          <label for="dni" class="form-label">DNI</label>
+                          <input type="text" class="form-control" id="dni" required />
+                        </div>
+              
+                        <div class="form-group">
+                          <label for="nombre" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="nombre" required />
+                        </div>
+              
+                        <div class="form-group">
+                          <label for="apellido" class="form-label">Apellido</label>
+                          <input type="text" class="form-control" id="apellido" required />
+                        </div>
+              
+                        <div class="form-group">
+                          <label for="expediente" class="form-label">Expediente</label>
+                          <input type="text" class="form-control" id="expediente" required />
+                        </div>
+              
+                        <div class="form-group">
+                          <label for="fecha_creacion" class="form-label"
+                            >Fecha de Creación</label
+                          >
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="fecha_creacion"
+                            required
+                          />
+                        </div>
+              
+                        <div class="form-group">
+                          <label for="asunto" class="form-label">Asunto</label>
+                          <input type="text" class="form-control" id="asunto" required />
+                        </div>
+              
+                        <div class="form-group">
+                          <label for="operador" class="form-label">Mesa</label>
+                          <select class="form-select" id="operador" required>
+                            <option value="">Seleccione una mesa</option>
+                            <option value="1">Mesa 1</option>
+                            <option value="2">Mesa 2</option>
+                            <option value="3">Mesa 3</option>
+                          </select>
+                        </div>
+              
+                        <div class="form-group">
+                          <label for="operador" class="form-label">Operador</label>
+                          <select class="form-select" id="operador" required>
+                            <option value="">Seleccione un operador</option>
+                            <option value="1">Operador 1</option>
+                            <option value="2">Operador 2</option>
+                            <option value="3">Operador 3</option>
+                          </select>
+                        </div>
+              
+                        <div class="py-4">
+                          <button type="submit" class="btn btn-primary">Guardar</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+        </div>
+      </div>
+    </div>
+  
+    <div class="row col-sm-9 col-md-9 col-xl-9 py-9 py-4">
+      <h3>Información Adicional</h3>
+      <p>Aquí puedes agregar cualquier información que desees mostrar en el otro lado de la pantalla. Puedes añadir texto, imágenes, listas, enlaces, etc.</p>
+    </div>
+  </div>
+  
+{% endblock %}
